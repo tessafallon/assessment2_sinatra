@@ -1,10 +1,4 @@
-<% @cats %>
 
-<h1>Create a new cat</h1>
 <% @cats.each do |cat| %>
-  <li>
-    <h2><a href="/<%= entry.id %>"><%= cat.name %></a>
-    <span><%= cat.home_planet %></span>
-    </h2>
-    <% end %>
-  </li>
+	<%= cat %>
+	<% end %>
