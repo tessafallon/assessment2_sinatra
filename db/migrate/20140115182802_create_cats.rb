@@ -10,7 +10,7 @@ class CreateCats < ActiveRecord::Migration
 
 
   def down
-  	drop :cats
+  	drop_table :cats
   end
-  
+
 end
