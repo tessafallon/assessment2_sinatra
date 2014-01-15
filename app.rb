@@ -1,13 +1,13 @@
 require 'bundler'
 Bundler.require
 
-set :database, "sqlite3:///spacecats.db"
+set :database, "sqlite3:///cats.db"
 
 class Cat < ActiveRecord::Base
 end
 
 	get '/' do
-		@cats = Cat.all()
+		@cats = Cat.all
 		erb :index
 	end
 
